@@ -1,1 +1,3 @@
-This folder contains code, measurement data, and audio examples that we would like to share with the research community with our manuscript Deppisch et al., "Identification and Matching of Room Acoustics With Moving Head-Worn Microphone Arrays", 2025.
+This folder contains code and audio examples associated with the manuscript T. Deppisch, S. Amengual Garí, P. Calamia, and J. Ahrens, "Identification and Matching of Room Acoustics With Moving Head-Worn Microphone Arrays", 2026.
+
+Audio examples are shared on this website. The folder "code" contains two scripts that demonstrate the RIR estimation method (estimateRirs.m) and plots the tracking data (plotTrackingDataFromMeasurement.m). To be able to run the example, please download the associated dataset from XX and place it in the folder "data".
