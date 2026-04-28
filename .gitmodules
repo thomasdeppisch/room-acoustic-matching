@@ -1,0 +1,6 @@
+[submodule "thirdparty/stft"]
+	path = thirdparty/stft
+	url = git@github.com:tomshlomo/stft.git
+[submodule "thirdparty/Array-Response-Simulator"]
+	path = thirdparty/Array-Response-Simulator
+	url = git@github.com:polarch/Array-Response-Simulator.git

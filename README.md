@@ -1,0 +1,1 @@
+This folder contains code, measurement data, and audio examples that we would like to share with the research community with our manuscript Deppisch et al., "Identification and Matching of Room Acoustics With Moving Head-Worn Microphone Arrays", 2025.

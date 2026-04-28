@@ -1,0 +1,21 @@
+This folder should contain the following measurement files:
+- hallway_2p5m_EMA_reference.mat
+- hallway_2p5m_femaleSpeech_combinedMove.mat
+- hallway_2p5m_femaleSpeech_headMove.mat
+- hallway_2p5m_maleSpeech_combinedMove.mat
+- hallway_2p5m_maleSpeech_headMove.mat
+- kitchen_2p8m_EMA_reference.mat
+- kitchen_2p8m_femaleSpeech_combinedMove.mat
+- kitchen_2p8m_femaleSpeech_headMove.mat
+- kitchen_2p8m_maleSpeech_combinedMove.mat
+- kitchen_2p8m_maleSpeech_headMove.mat
+- office_2p1m_EMA_reference.mat
+- office_2p1m_femaleSpeech_combinedMove.mat
+- office_2p1m_femaleSpeech_headMove.mat
+- office_2p1m_maleSpeech_combinedMove.mat
+- office_2p1m_maleSpeech_headMove.mat
+- storage_2p4m_EMA_reference.mat
+- storage_2p4m_femaleSpeech_combinedMove.mat
+- storage_2p4m_femaleSpeech_headMove.mat
+- storage_2p4m_maleSpeech_combinedMove.mat
+- storage_2p4m_maleSpeech_headMove.mat

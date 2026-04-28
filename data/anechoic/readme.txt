@@ -1,0 +1,1 @@
+This folder should contain glassesOnKemarAnechoicIRs.mat and selfNoise.wav
