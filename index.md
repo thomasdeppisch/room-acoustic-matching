@@ -29,6 +29,7 @@ Head-worn devices such as smartglasses and headsets are the predominant form fac
 Below are examples from both parts of the listening experiment described in the paper.
 
 ### MUSHRA
+The MUSHRA-like experiment compared a Reference to a Hidden Reference, three different Estimates, and an Anchor. The Reference is spatialized at 30 deg azimuth, and the test conditions at -30 deg azimuth.
 {% assign example_ids = "1,2,3,4,5,6,7,8" | split: "," %}
 {% for example_id in example_ids %}
 Example {{ forloop.index }}
@@ -57,6 +58,7 @@ Example {{ forloop.index }}
 {% endfor %}
 
 ### 2AFC
+In the experiment, participants rated examples like the ones below in 48 different trials. There are two types of trials: comparing the Reference to a Hidden Reference and a Measurement from another room, and comparing the Reference to an Estimate and a Measurement from another room. Below are 10 examples, more are available [here](https://github.com/thomasdeppisch/room-acoustic-matching/tree/main/audio_examples/2_2AFC).
 {% assign afc_examples = "1|office|hiddenRef|Hidden Reference|storage,2|office|hiddenRef|Hidden Reference|kitchen,6|storage|hiddenRef|Hidden Reference|hallway,7|kitchen|hiddenRef|Hidden Reference|office,12|hallway|hiddenRef|Hidden Reference|kitchen,25|office|est|Estimate|storage,30|storage|est|Estimate|hallway,31|kitchen|est|Estimate|office,35|hallway|est|Estimate|storage,46|hallway|est|Estimate|office" | split: "," %}
 {% for example in afc_examples %}
 {% assign fields = example | split: "|" %}
