@@ -31,7 +31,7 @@ Below are examples from both parts of the listening experiment described in the 
 ### MUSHRA
 {% assign example_ids = "1,2,3,4,5,6,7,8" | split: "," %}
 {% for example_id in example_ids %}
-### Example {{ forloop.index }}
+Example {{ forloop.index }}
 
 <div class="player">
     <ts-track title="Reference">
@@ -40,24 +40,24 @@ Below are examples from both parts of the listening experiment described in the 
     <ts-track title="Hidden Reference">
         <ts-source src="audio_examples/1_MUSHRA/{{ example_id }}_hiddenRef.wav"></ts-source>
     </ts-track>
-    <ts-track title="Anchor">
-        <ts-source src="audio_examples/1_MUSHRA/{{ example_id }}_anchor.wav"></ts-source>
-    </ts-track>
-    <ts-track title="Estimated Full Model">
-        <ts-source src="audio_examples/1_MUSHRA/{{ example_id }}_estFull.wav"></ts-source>
-    </ts-track>
-    <ts-track title="Estimated Non-Blind Model">
+    <ts-track title="Estimate Informed Motion-Aware Method">
         <ts-source src="audio_examples/1_MUSHRA/{{ example_id }}_estNonBlind.wav"></ts-source>
     </ts-track>
-    <ts-track title="Estimated Simple Model">
+    <ts-track title="Estimate Blind Motion-Aware Method">
+        <ts-source src="audio_examples/1_MUSHRA/{{ example_id }}_estFull.wav"></ts-source>
+    </ts-track>
+    <ts-track title="Estimate Blind Omnidirectional Method">
         <ts-source src="audio_examples/1_MUSHRA/{{ example_id }}_estSimple.wav"></ts-source>
+    </ts-track>
+    <ts-track title="Anchor">
+        <ts-source src="audio_examples/1_MUSHRA/{{ example_id }}_anchor.wav"></ts-source>
     </ts-track>
 </div>
 
 {% endfor %}
 
 ### 2AFC
-{% assign afc_examples = "1|office|hiddenRef|Hidden Reference|storage,2|office|hiddenRef|Hidden Reference|kitchen,6|storage|hiddenRef|Hidden Reference|hallway,7|kitchen|hiddenRef|Hidden Reference|office,12|hallway|hiddenRef|Hidden Reference|kitchen,25|office|est|Estimated|storage,30|storage|est|Estimated|hallway,31|kitchen|est|Estimated|office,35|hallway|est|Estimated|storage,46|hallway|est|Estimated|office" | split: "," %}
+{% assign afc_examples = "1|office|hiddenRef|Hidden Reference|storage,2|office|hiddenRef|Hidden Reference|kitchen,6|storage|hiddenRef|Hidden Reference|hallway,7|kitchen|hiddenRef|Hidden Reference|office,12|hallway|hiddenRef|Hidden Reference|kitchen,25|office|est|Estimate|storage,30|storage|est|Estimate|hallway,31|kitchen|est|Estimate|office,35|hallway|est|Estimate|storage,46|hallway|est|Estimate|office" | split: "," %}
 {% for example in afc_examples %}
 {% assign fields = example | split: "|" %}
 {% assign trial_id = fields[0] %}
@@ -65,7 +65,7 @@ Below are examples from both parts of the listening experiment described in the 
 {% assign test_condition = fields[2] %}
 {% assign test_title = fields[3] %}
 {% assign other_room = fields[4] %}
-### Example {{ forloop.index }}: {{ reference_room | capitalize }} vs. {{ other_room | capitalize }}
+Example {{ forloop.index }}: {{ reference_room | capitalize }} vs. {{ other_room | capitalize }}
 
 <div class="player">
     <ts-track title="Reference ({{ reference_room | capitalize }})">
